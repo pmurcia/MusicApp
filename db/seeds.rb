@@ -5,4 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Song.create(title:'Someone like you', url:'http://www.google.es/', image:'http://mail.google.com/', cathegory:'Balada', tag1:'Adele')
+Song.create(title:'Someone like you', image:'http://www.google.es/', image:'http://mail.google.com/', cathegory:'Balada', tag1:'Adele')

@@ -11,12 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140811075143) do
+ActiveRecord::Schema.define(version: 20140811082604) do
+
+  create_table "midis", force: true do |t|
+    t.integer "song_id"
+    t.string  "url"
+  end
+
+  create_table "music_sheets", force: true do |t|
+    t.integer "song_id"
+    t.string  "url"
+  end
 
   create_table "songs", force: true do |t|
     t.string "title"
-    t.string "url"
     t.string "image"
+    t.string "instrument"
     t.string "cathegory"
     t.string "tag1"
     t.string "tag2"
